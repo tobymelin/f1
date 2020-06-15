@@ -5,6 +5,7 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import RaceSchema from '../components/RaceSchema';
 import useTranslation from 'next-translate/useTranslation'
+import Year from "./year/[year]";
 
 const Index = (props) => {				
   const { t, lang } = useTranslation()
@@ -34,25 +35,23 @@ const Index = (props) => {
 	);
 }
 
-Index.getInitialProps = async ({query: {timezone}, res}) => {
-  const currentYear = '2020';
+export default Index;
 
-	const data = await import(`../db/`+currentYear+`.json`)
-	
-	// Handle cases where we're not able to automatically switch dates/times (noscript)
-	if(timezone){
-		res.writeHead(302, {
-			Location: '/timezone/'+timezone.replace("/", "-")
-		})
-		res.end()
-		return;
-	}
-	
-	return {
-	    year: currentYear,
-	    races: data.races,
-	    virtual: data.virtual
-	}
+export const getStaticPaths = async () => {
+	return ({
+		paths: ['/'],
+		fallback: false,
+	})
 }
 
-export default Index;
+export const getStaticProps = async ({ params }) => {
+	const currentYear = '2020';
+	const data = await import(`../db/`+currentYear+`.json`)
+
+	return {
+		props: {
+			year: currentYear,
+			races: data.races
+		}
+	}
+};
