@@ -55,3 +55,28 @@ export const getStaticProps = async ({ params }) => {
 		}
 	}
 };
+
+/*
+
+Index.getInitialProps = async ({query: {timezone}, res}) => {
+  const currentYear = '2020';
+
+	const data = await import(`../db/`+currentYear+`.json`)
+
+	// Handle cases where we're not able to automatically switch dates/times (noscript)
+	if(timezone){
+		res.writeHead(302, {
+			Location: '/timezone/'+timezone.replace("/", "-")
+		})
+		res.end()
+		return;
+	}
+
+	return {
+	    year: currentYear,
+	    races: data.races
+	}
+}
+
+export default Index;
+ */
