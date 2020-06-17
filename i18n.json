@@ -1,11 +1,12 @@
 {
   "allLanguages": [
-    "cz",
+    "cs",
     "de",
     "en",
     "es",
     "fr",
-    "rs",
+    "hr",
+    "ru",
     "sv"
   ],
   "defaultLanguage": "en",

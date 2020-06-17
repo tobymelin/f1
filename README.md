@@ -5,7 +5,7 @@
 _The second edition of [f1calendar.com](https://f1calendar.com)_
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
@@ -17,17 +17,9 @@ npm run dev
 
 ## Localization
 
-F1 Calendar can now be localized. Localization files live within the locales directory. We rely on community contributions to add additional languages to the calendar. 
+If there is a language you'd like to see F1 Calendar localized to but we haven't got around to it yet, and you have some git-fu, feel free to submit a pull request to the repository.
 
-
-### Adding a new language
-
-In the locales folder copy the "en" directory and create a new directory with the two letter code for the new locale you want to add.
-
-Go through each of the json files and translate the English to your chosen language. Feel free to create an issue if you require more context for a string.
-
-Once completed feel free to submit a PR, we will be happy to configure the rest of the app to make use of the new strings.
-
+Read more about localizing [here](https://github.com/sportstimes/f1/tree/master/locales).
 ## Contributors ✨
 
 Made open-source by [@ay8s](https://twitter.com/ay8s) with the support of [@aajhiggs](https://twitter.com/aajhiggs) and [@si](https://twitter.com/si).
@@ -51,6 +43,7 @@ Thanks goes to these wonderful people who have also contributed. ([emoji key](ht
     <td align="center"><a href="https://lshallo.eu"><img src="https://avatars0.githubusercontent.com/u/22171518?v=4" width="100px;" alt=""/><br /><sub><b>LsHallo</b></sub></a><br /><a href="#translation-LsHallo" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/schoenpat"><img src="https://avatars2.githubusercontent.com/u/49246677?v=4" width="100px;" alt=""/><br /><sub><b>schoenpat</b></sub></a><br /><a href="#translation-schoenpat" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/adamhoustava"><img src="https://avatars0.githubusercontent.com/u/32132975?v=4" width="100px;" alt=""/><br /><sub><b>Adam Houšťava</b></sub></a><br /><a href="#translation-adamhoustava" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/HarDX"><img src="https://avatars1.githubusercontent.com/u/5231223?v=4" width="100px;" alt=""/><br /><sub><b>Konstantin Krasavin</b></sub></a><br /><a href="#translation-HarDX" title="Translation">🌍</a></td>
   </tr>
 </table>
 
