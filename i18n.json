@@ -13,9 +13,11 @@
     "pl",
     "pt-BR",
     "ru",
+    "sl",
     "sq",
     "sv",
     "tr",
+    "uk",
     "zh"
   ],
   "languageNames": {
@@ -32,9 +34,11 @@
     "pl": "Polski",
     "pt-BR": "português do Brasil",
     "ru": "Русский",
+    "sl": "Slovenščina",
     "sq": "Shqip",
     "sv": "Svenska",
     "tr": "Türkçe",
+    "uk": "Українська",
     "zh": "中文"
   },
   "defaultLanguage": "en",
